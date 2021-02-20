@@ -3,9 +3,9 @@ package main
 import "testing"
 
 func TestSum(t *testing.T){
-	numbers := [...]int{1,2,3}
+	numbers := [...]int{1,2,4}
 	got := Sum(numbers)
-	expected := 6
+	expected := 7
 	if got != expected{
 		t.Errorf("expected %d but got %d, numbers: %v", expected, got, numbers)
 	}
